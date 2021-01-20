@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Auth::routes();
 
@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //all frontend Routes
 
-Route::get('/',function(){
+Route::get('/blog',function(){
   return view('frontend.index');
 });
 Route::get('/single-page',function(){
