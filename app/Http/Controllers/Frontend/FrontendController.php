@@ -10,14 +10,19 @@ class FrontendController extends Controller
 
     public function index(){
     //  dd('ok');
-      return view('frontend.index');
+      return view('frontend.single-page.index');
     }
 
     public function contact(){
-      return view('frontend.contact');
+      return view('frontend.single-page.contact');
     }
-    public function about(){
-      return view('frontend.about');
+    public function Details(){
+      return view('frontend.single-page.details');
     }
+
+    public function Categories(){
+      return view('frontend.single-page.category');
+    }
+
 
 }

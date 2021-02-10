@@ -1,66 +1,90 @@
-<!-- Footer Part -->
-<section class="footer_part">
-  <div class="container">
+<!-- Footer Start -->
+<div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
     <div class="row">
-      <div class="col-md-8">
-        <h4 style="color: white">Contact Us</h4>
-        <p style="color: white">Address: Cittagong, Mobile: 0183284666, Email: amir@gmail.com</p>
-      </div>
-      <div class="col-md-4">
-        <h4 style="color: white">Follow Us</h4>
-        <div class="social">
-          <ul>
-            <li><a href="" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href="" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
-            <li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
-          </ul>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+            </a>
+            <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+            <div class="d-flex justify-content-start mt-4">
+                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-      </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-bold mb-4">Categories</h4>
+            <div class="d-flex flex-wrap m-n1">
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-bold mb-4">Tags</h4>
+            <div class="d-flex flex-wrap m-n1">
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-bold mb-4">Quick Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
+                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
+                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy & policy</a>
+                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms & conditions</a>
+                <a class="text-secondary" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p style="color: white;padding: 50px 0px 10px 0px;">
-         Developed by Amir &copy; Copyright   <script type="text/javascript">document.write(new Date().getFullYear())</script>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="gotoup">
-        <img src="{{asset('public/frontend/image/scrl.jpg')}}" style="width: 40px; height: 40px;">
-      </div>
-    </div>
-  </div>
 </div>
+<div class="container-fluid py-4 px-sm-3 px-md-5">
+    <p class="m-0 text-center">
+        &copy; <a class="font-weight-bold" href="#">TechPoint</a>. All Rights Reserved. Designed by
+        <a class="font-weight-bold" href="#">Soft-Queue</a>
+    </p>
+</div>
+<!-- Footer End -->
 
-<!-- <script src="{{asset('public/frontend/')}}js/jquery-3.2.1.slim.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $(window).scroll(function(){
-      if($(this).scrollTop()>300){
-        $('.gotoup').fadeIn();
-      }else{
-        $('.gotoup').fadeOut();
-      }
-    });
-    $('.gotoup').click(function(){
-      $('html,body').animate({scrollTop:0},1000);
-    });
-  });
-</script>
-<script src="{{asset('public/frontend/js/popper.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Back to Top -->
+<a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
 
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('public/frontend')}}/lib/easing/easing.min.js"></script>
+<script src="{{asset('public/frontend')}}/lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="{{asset('public/frontend')}}/mail/jqBootstrapValidation.min.js"></script>
+<script src="{{asset('public/frontend')}}/mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="{{asset('public/frontend')}}/js/main.js"></script>
 </body>
+
 </html>

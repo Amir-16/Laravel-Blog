@@ -21,11 +21,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/','FrontEnd\FrontendController@index');
+Route::get('/','FrontEnd\FrontendController@index')->name('index');
 
-Route::get('/contact','FrontEnd\FrontendController@contact');
+Route::get('/contact','FrontEnd\FrontendController@contact')->name('contacts');
 
-Route::get('/about','FrontEnd\FrontendController@about');
+Route::get('/details','FrontEnd\FrontendController@Details')->name('news.details');
+
+Route::get('/categories','FrontEnd\FrontendController@Categories')->name('news.categories');
 
 Auth::routes();
 
