@@ -15,7 +15,7 @@ $route =Route::current()->getName();
       <a href="#" class="nav-link">
         <i class="nav-icon fas fa-copy"></i>
         <p>
-          Manage User
+           User
           <i class="fas fa-angle-left right"></i>
         </p>
       </a>
@@ -35,7 +35,7 @@ $route =Route::current()->getName();
       <a href="#" class="nav-link">
         <i class="nav-icon fas fa-copy"></i>
         <p>
-          Manage Profile
+           Profile
           <i class="fas fa-angle-left right"></i>
         </p>
       </a>
