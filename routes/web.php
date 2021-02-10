@@ -21,21 +21,37 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//all frontend Routes
+Route::get('/','FrontEnd\FrontendController@index');
 
-Route::get('/blog',function(){
-  return view('frontend.index');
-});
-Route::get('/single-page',function(){
-  return view('frontend.single-page');
-});
-Route::get('/contact',function(){
-  return view('frontend.contact');
-});
+Route::get('/contact','FrontEnd\FrontendController@contact');
+
+Route::get('/about','FrontEnd\FrontendController@about');
+
+Auth::routes();
+
+//Backend Routes groups
+Route::group(['middleware'=>'auth'],function(){
+
+  Route::prefix('users')->group(function(){
+    Route::get('/view','Backend\UserController@index')->name('users.view');
+    Route::get('/add','Backend\UserController@add')->name('users.add');
+    Route::get('/edit/{id}','Backend\UserController@edit')->name('users.edit');
+    Route::post('/store','Backend\UserController@store')->name('users.store');
+    Route::post('/update/{id}','Backend\UserController@update')->name('users.update');
+    Route::get('/delete/{id}','Backend\UserController@delete')->name('users.delete');
+  });
+
+  //profiles Route
+  Route::prefix('profile')->group(function(){
+    Route::get('/view','Backend\ProfileController@index')->name('profiles.view');
+    Route::get('/edit','Backend\ProfileController@edit')->name('profiles.edit');
+    Route::post('/update','Backend\ProfileController@update')->name('profiles.update');
+    Route::get('/password/view','Backend\ProfileController@passwordView')->name('profiles.password.view');
+    Route::post('/password/update','Backend\ProfileController@passwordUpdate')->name('profiles.password.update');
 
 
-//Admin Routes
+  });
 
-Route::get('/dashboard',function(){
-  return view('admin.index');
 });
+
+Route::get('/home', 'HomeController@index')->name('home');
