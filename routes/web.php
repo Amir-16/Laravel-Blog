@@ -50,10 +50,19 @@ Route::group(['middleware'=>'auth'],function(){
     Route::post('/update','Backend\ProfileController@update')->name('profiles.update');
     Route::get('/password/view','Backend\ProfileController@passwordView')->name('profiles.password.view');
     Route::post('/password/update','Backend\ProfileController@passwordUpdate')->name('profiles.password.update');
+  });
+    //Category Route
+    Route::prefix('category')->group(function(){
 
+      Route::get('/view','Backend\CategoryController@index')->name('categories.view');
+      Route::post('/store','Backend\CategoryController@store')->name('categories.store');
+      Route::get('/edit{id}','Backend\CategoryController@edit')->name('categories.edit');
+      Route::post('/update{id}','Backend\CategoryController@update')->name('categories.update');
 
   });
 
+
+
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

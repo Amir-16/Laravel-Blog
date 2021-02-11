@@ -14,7 +14,7 @@ class CreateSlugsTable extends Migration
     public function up()
     {
         Schema::create('slugs', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }
