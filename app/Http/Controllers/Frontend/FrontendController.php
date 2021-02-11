@@ -4,13 +4,16 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Model\Category;
+use App\Model\Post;
 
 class FrontendController extends Controller
 {
 
     public function index(){
-    //  dd('ok');
-      return view('frontend.single-page.index');
+      $data['categories']=Category::all();
+      $daat['allposts']=Post::with(['posts'])->get();
+      return view('frontend.single-page.index',$data);
     }
 
     public function contact(){

@@ -32,7 +32,7 @@
           <!-- Custom tabs (Charts with tabs)-->
           <div class="card">
             <div class="card-header">
-              <h3>SLider list
+              <h3>Posts list
                 <a class="btn btn-success float-right" href="{{route('posts.add')}}"> <i class="fa fa-plus-circle"></i> Add Post</a>
               </h3>
             </div><!-- /.card-header -->
@@ -53,13 +53,15 @@
                   @foreach($allData as $key=>$post)
                   <tr>
                     <td>{{$key+1}}</td>
-                      <td>{{$post->name}}</td>
+                      <td>{{$post['posts']['name']}}</td>
                       <td>{{$post->title}}</td>
                       <td>{{$post->content}}</td>
-                      <td>{{$post->image}}</td>
+                      <td><img src="{{(!empty($post->image)?url('public/upload/posts_image/'.$post->image):url('public/upload/no-image.jpg'))}}"
+                         style="width: 70px;height: 80px;border: 1px solid #000" alt="">
+                      </td>
                       <td>{{$post->date}}</td>
                       <td> <a title="edit" class="btn btn-sm btn-primary" href="{{route('posts.edit',$post->id)}}"> <i class="fa fa-edit"> </i> </a>
-                        <a title="delete" id="delete" class="btn btn-sm btn-danger" href="{{route('post.delete',$post->id)}}"> <i class="fa fa-trash"> </i></a>
+                        <a title="delete" id="delete" class="btn btn-sm btn-danger" href="{{route('posts.delete',$post->id)}}"> <i class="fa fa-trash"> </i></a>
                       </td>
                   </tr>
                   @endforeach

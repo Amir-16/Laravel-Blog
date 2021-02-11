@@ -6,12 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Model\Category;
 use App\Model\Post;
+use Auth;
 use DB;
 class PostController extends Controller
 {
   public function index(){
   //  dd('ok');
-    $data['allData']=Post::all();
+    $data['allData']=Post::with(['posts'])->orderBy('id','desc')->get();
     return view('backend.post.view-post',$data);
 
   }
@@ -24,25 +25,30 @@ class PostController extends Controller
   public function store(Request $request){
 
     $data =new Post();
-    $data->name =$request->name;
+    $data->category_id =$request->category_id;
+    $data->user_id=Auth::user()->id;
+    $data->title =$request->title;
+    $data->content= $request->content;
+    $data->date =$request->date;
     if($request->file('image')){
         $file= $request->file('image');
         $fileName=date('YmdHi').$file->getClientOriginalName();
-        $file->move(public_path('upload/category_images'),$fileName);
+        $file->move(public_path('upload/posts_image'),$fileName);
         $data['image']=$fileName;
       }
     $data->save();
     $notification=array(
-                      'message'=>'Category Added Successfully',
+                      'message'=>'Posts Added Successfully',
                         'alert-type'=>'success'
                       );
-                    return redirect()->route('categories.view')->with($notification);
+                    return redirect()->route('posts.view')->with($notification);
   }
 
 
     public function edit($id){
-      $editData=Category::find($id);
-      return view('backend.category.edit-category' ,compact('editData'));
+      $data['categories']=Category::all();
+      $data['editData'] =Post::where('id',$id)->first();
+      return view('backend.post.add-post' ,$data);
     }
 
     public function update(Request $request,$id){

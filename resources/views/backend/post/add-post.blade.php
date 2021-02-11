@@ -63,21 +63,11 @@
 
                   <div class="form-group col-md-12">
                     <label for="">Content</label>
-                    <textarea name="content" rows="8" id="content" cols="80"class="form-control"></textarea>
-
+                    <textarea name="content" rows="8" value="{{@$editData->content}}" id="content" cols="80"class="form-control"></textarea>
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="dobirth date"> Date of Birth <font style="color:red">*</font> </label>
-                    <input type="date" name="dob"  value="{{@$editData->dob}}" class="form-control form-group-sm" placeholder="birth date">
-                  </div>
-
-                  <div class="form-group col-md-4">
-                    <label for="gender"> Gender <font style="color:red">*</font> </label>
-                    <select class="form-control form-group-sm" name="gender">
-                          <option value="">Select gender</option>
-                          <option value="male" {{(@$editData->gender=='male')?"selected":""}}>Male</option>
-                          <option value="female" {{(@$editData->gender=='female')?"selected":""}}>Female</option>
-                    </select>
+                    <label for="date">Image <font style="color:red">*</font> </label>
+                    <input type="date" name="date" value="{{@$editData->date}}" class="form-control form-group-sm" id="date">
                   </div>
 
                   <div class="form-group col-md-4">
@@ -116,44 +106,14 @@
 $(function () {
   $('#myform').validate({
     rules: {
-      name: {
+      category_id: {
         required: true,
       },
-      email:{
+      title:{
         required: true,
       },
-      fname: {
+      content: {
         required: true,
-      },
-      mname: {
-        required: true,
-      },
-      dob: {
-        required: true,
-      },
-      mobile: {
-        required: true,
-      },
-      address: {
-        required: true,
-      },
-      join_date: {
-        required: true,
-      },
-      religion: {
-        required: true,
-      },
-      gender: {
-        required: true,
-      },
-      class_id: {
-        required: true,
-      },
-      salary:{
-        required:true,
-      },
-      designation:{
-        required:true,
       }
     },
     messages: {
