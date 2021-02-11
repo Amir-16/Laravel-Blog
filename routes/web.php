@@ -58,8 +58,21 @@ Route::group(['middleware'=>'auth'],function(){
       Route::post('/store','Backend\CategoryController@store')->name('categories.store');
       Route::get('/edit{id}','Backend\CategoryController@edit')->name('categories.edit');
       Route::post('/update{id}','Backend\CategoryController@update')->name('categories.update');
+      Route::get('/delete{id}','Backend\CategoryController@delete')->name('categories.delete');
 
   });
+
+  //Category Route
+  Route::prefix('post')->group(function(){
+    Route::get('/view','Backend\PostController@index')->name('posts.view');
+    Route::get('/add','Backend\PostController@add')->name('posts.add');
+    Route::post('/store','Backend\PostController@store')->name('posts.store');
+    Route::get('/edit{id}','Backend\PostController@edit')->name('posts.edit');
+    Route::post('/update{id}','Backend\PostController@update')->name('posts.update');
+    Route::get('/delete{id}','Backend\PostController@delete')->name('posts.delete');
+
+});
+
 
 
 

@@ -49,7 +49,7 @@ class CategoryController extends Controller
 
       public function update(Request $request,$id){
         //dd('ok');
-        
+
         $data =category::find($id);
         $data->name =$request->name;
         if($request->file('image')){
@@ -73,7 +73,7 @@ class CategoryController extends Controller
         $category->delete();
         $notification=array(
                           'message'=>'Category deleted Successfully',
-                            'alert-type'=>'success'
+                            'alert-type'=>'error'
                           );
                         return redirect()->route('categories.view')->with($notification);
       }
