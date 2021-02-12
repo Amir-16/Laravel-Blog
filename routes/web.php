@@ -64,12 +64,25 @@ Route::group(['middleware'=>'auth'],function(){
 
   //Category Route
   Route::prefix('post')->group(function(){
+
     Route::get('/view','Backend\PostController@index')->name('posts.view');
     Route::get('/add','Backend\PostController@add')->name('posts.add');
     Route::post('/store','Backend\PostController@store')->name('posts.store');
     Route::get('/edit{id}','Backend\PostController@edit')->name('posts.edit');
     Route::post('/update{id}','Backend\PostController@update')->name('posts.update');
     Route::get('/delete{id}','Backend\PostController@delete')->name('posts.delete');
+
+});
+
+//Category Route
+Route::prefix('trend')->group(function(){
+  
+  Route::get('/view','Backend\TrendingController@index')->name('trends.view');
+  Route::get('/add','Backend\TrendingController@add')->name('trends.add');
+  Route::post('/store','Backend\TrendingController@store')->name('trends.store');
+  Route::get('/edit{id}','Backend\TrendingController@edit')->name('trends.edit');
+  Route::post('/update{id}','Backend\TrendingController@update')->name('trends.update');
+  Route::get('/delete{id}','Backend\TrendingController@delete')->name('trends.delete');
 
 });
 

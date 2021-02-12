@@ -6,13 +6,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Model\Category;
 use App\Model\Post;
-
+use App\Model\Trend;
 class FrontendController extends Controller
 {
 
     public function index(){
       $data['categories']=Category::all();
-      $daat['allposts']=Post::with(['posts'])->get();
+      $data['trends']=Trend::all();
+      $data['allposts']=Post::with(['posts'])->get();
       return view('frontend.single-page.index',$data);
     }
 

@@ -1,4 +1,4 @@
-Post@extends('backend.layouts.master')
+@extends('backend.layouts.master')
 
 @section('content')
 <!-- Content Wrapper. Contains page content -->
@@ -33,30 +33,21 @@ Post@extends('backend.layouts.master')
           <div class="card">
             <div class="card-header">
                   <h3>@if(isset($editData))
-                  Edit Post
+                  Edit Trend
                     @else
-                  Add Post
+                  Add Trend
                     @endif
-                <a class="btn btn-success float-right" href="{{route('posts.view')}}"> <i class="fa fa-list"></i>View Posts </a>
+                <a class="btn btn-success float-right" href="{{route('trends.view')}}"> <i class="fa fa-list"></i>View Posts </a>
               </h3>
             </div><!-- /.card-header -->
             <div class="card-body">
-              <form action="{{(@$editData)?route('posts.update',$editData->id):route('posts.store')}}"
+              <form action="{{(@$editData)?route('trends.update',$editData->id):route('trends.store')}}"
                  id="myform" method="post" enctype="multipart/form-data">
                 @csrf
                   <input type="hidden" name="id" value="{{@$editData->id}}">
-                          <div class="form-row">
+                <div class="form-row">
 
-                  <div class="form-group col-md-6">
-                    <label for="name"> Category Name<font style="color:red">*</font> </label>
-                    <select class="form-control" name="category_id">
-                      <option value="">Select Category</option>
-                      @foreach($categories as $category)
-                      <option value="{{$category->id}}"{{(@$editData->category_id ==$category->id)?"selected":""}}>{{$category->name}}</option>
-                      @endforeach
-                    </select>
-                  </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-md-12">
                     <label for="name"> Title<font style="color:red">*</font> </label>
                     <input type="text" name="title"  value="{{@$editData->title}}" class="form-control form-group-sm" placeholder="Title">
                   </div>
@@ -67,7 +58,7 @@ Post@extends('backend.layouts.master')
                   </div>
 
                   <div class="form-group col-md-4">
-                    <label for="date">Image <font style="color:red">*</font> </label>
+                    <label for="date">Date <font style="color:red">*</font> </label>
                     <input type="date" name="date" value="{{@$editData->date}}" class="form-control form-group-sm" id="date">
                   </div>
 
@@ -77,7 +68,7 @@ Post@extends('backend.layouts.master')
                   </div>
 
                   <div class="form-group col-md-4" >
-                  <img id="showImage" src="{{(!empty(@$editData->image))?url('public/upload/posts_image/'.$editData->image):url('public/upload/no-image.jpg')}}"
+                  <img id="showImage" src="{{(!empty(@$editData->image))?url('public/upload/trends_image/'.$editData->image):url('public/upload/no-image.jpg')}}"
                   style="width: 100px;height: 110px; border:1px solid #000000">
                   </div>
 
@@ -107,13 +98,13 @@ Post@extends('backend.layouts.master')
 $(function () {
   $('#myform').validate({
     rules: {
-      category_id: {
-        required: true,
-      },
       title:{
         required: true,
       },
       content: {
+        required: true,
+      },
+      date: {
         required: true,
       }
     },
