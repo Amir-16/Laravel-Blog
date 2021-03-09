@@ -1,90 +1,69 @@
-<!-- Footer Start -->
-<div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+<footer>
+
+  <div class="container">
     <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
-            </a>
-            <p> A tech blog for alltypes of daily tech updates</p>
-            <div class="d-flex justify-content-start mt-4">
-                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h4 class="font-weight-bold mb-4">Categories</h4>
-            <div class="d-flex flex-wrap m-n1">
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h4 class="font-weight-bold mb-4">Tags</h4>
-            <div class="d-flex flex-wrap m-n1">
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h4 class="font-weight-bold mb-4">Quick Links</h4>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
-                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
-                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy & policy</a>
-                <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms & conditions</a>
-                <a class="text-secondary" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid py-4 px-sm-3 px-md-5">
-    <p class="m-0 text-center">
-        &copy; <a class="font-weight-bold" href="#">TechPoint</a>. All Rights Reserved. Designed by
-        <a class="font-weight-bold" href="#">Soft-Queue</a>
-    </p>
-</div>
-<!-- Footer End -->
+
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-section">
+
+          <a class="logo" href="#"><img src="{{asset('public/frontend')}}/images/logo.png" alt="Logo Image"></a>
+          <p class="copyright">Bona @ 2017. All rights reserved.</p>
+          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+          <ul class="icons">
+            <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
+            <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
+            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+            <li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
+            <li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
+          </ul>
+
+        </div><!-- footer-section -->
+      </div><!-- col-lg-4 col-md-6 -->
+
+      <div class="col-lg-4 col-md-6">
+          <div class="footer-section">
+          <h4 class="title"><b>CATAGORIES</b></h4>
+          <ul>
+            <li><a href="#">BEAUTY</a></li>
+            <li><a href="#">HEALTH</a></li>
+            <li><a href="#">MUSIC</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">SPORT</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">TRAVEL</a></li>
+          </ul>
+        </div><!-- footer-section -->
+      </div><!-- col-lg-4 col-md-6 -->
+
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-section">
+
+          <h4 class="title"><b>SUBSCRIBE</b></h4>
+          <div class="input-area">
+            <form>
+              <input class="email-input" type="text" placeholder="Enter your email">
+              <button class="submit-btn" type="submit"><i class="icon ion-ios-email-outline"></i></button>
+            </form>
+          </div>
+
+        </div><!-- footer-section -->
+      </div><!-- col-lg-4 col-md-6 -->
+
+    </div><!-- row -->
+  </div><!-- container -->
+</footer>
 
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+<!-- SCIPTS -->
 
+<script src="{{asset('public/frontend')}}/common-js/jquery-3.1.1.min.js"></script>
 
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="{{asset('public/frontend')}}/lib/easing/easing.min.js"></script>
-<script src="{{asset('public/frontend')}}/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="{{asset('public/frontend')}}/common-js/tether.min.js"></script>
 
-<!-- Contact Javascript File -->
-<script src="{{asset('public/frontend')}}/mail/jqBootstrapValidation.min.js"></script>
-<script src="{{asset('public/frontend')}}/mail/contact.js"></script>
+<script src="{{asset('public/frontend')}}/common-js/bootstrap.js"></script>
 
-<!-- Template Javascript -->
-<script src="{{asset('public/frontend')}}/js/main.js"></script>
+<script src="{{asset('public/frontend')}}/common-js/scripts.js"></script>
+
 </body>
-
 </html>

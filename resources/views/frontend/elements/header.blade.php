@@ -1,104 +1,50 @@
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>TechPoint</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+	<title>TITLE</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 
-    <!-- Favicon -->
-    <link href="{{asset('public/frontend')}}/img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- Font -->
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="{{asset('public/frontend')}}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('public/frontend')}}/css/style.css" rel="stylesheet">
+	<!-- Stylesheets -->
+
+	<link href="{{asset('public/frontend')}}/common-css/bootstrap.css" rel="stylesheet">
+
+	<link href="{{asset('public/frontend')}}/common-css/ionicons.css" rel="stylesheet">
+
+
+	<link href="{{asset('public/frontend')}}/layout-1/css/styles.css" rel="stylesheet">
+
+	<link href="{{asset('public/frontend')}}/layout-1/css/responsive.css" rel="stylesheet">
+
 </head>
+<body >
 
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid">
-        <div class="row align-items-center bg-light px-lg-5">
-            <div class="col-12 col-md-8">
-              @php
-              $count=0;
-              @endphp
+	<header>
+		<div class="container-fluid position-relative no-side-padding">
 
-                <div class="d-flex justify-content-between">
-                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Trending</div>
-                      @foreach($trends as $trend)
-                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
-                        <div class="text-truncate"><a class="text-secondary" href="">{{$trend->title}}</a></div>
+			<a href="#" class="logo"><img src="{{asset('public/frontend')}}/images/logo.png" alt="Logo Image"></a>
 
-                    </div>
-                    @php
-                    $count++;
-                    @endphp
-                    @endforeach
-                </div>
-            </div>
-            <div class="col-md-4 text-right d-none d-md-block">
-                <?php
-                echo date("d-m-Y");
+			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
 
-                 ?>
-            </div>
-        </div>
-        <div class="row align-items-center py-2 px-lg-5">
-            <div class="col-lg-4">
-                <a href="" class="navbar-brand d-none d-lg-block">
-                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Tech</span>Point</h1>
-                </a>
-            </div>
-            <div class="col-lg-8 text-center text-lg-right">
-                <img class="img-fluid" src="{{asset('public/frontend')}}/img/ads-700x70.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+			<ul class="main-menu visible-on-click" id="main-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Categories</a></li>
+				<li><a href="#">Features</a></li>
+			</ul><!-- main-menu -->
 
+			<div class="src-area">
+				<form>
+					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+					<input class="src-input" type="text" placeholder="Type of search">
+				</form>
+			</div>
 
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0 mb-3">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
-            <a href="" class="navbar-brand d-block d-lg-none">
-                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Tech</span>Point</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav mr-auto py-0">
-                    <a href="{{route('index')}}" class="nav-item nav-link active">Home</a>
-                    <a href="{{route('news.categories')}}" class="nav-item nav-link">Categories</a>
-                    <a href="{{route('news.details')}}" class="nav-item nav-link">Details</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="dropdown-item">Menu item 1</a>
-                        </div>
-                    </div>
-                    <a href="{{route('contacts')}}" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
-                    <input type="text" class="form-control" placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="input-group-text text-secondary"><i
-                                class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
+		</div><!-- conatiner -->
+	</header>

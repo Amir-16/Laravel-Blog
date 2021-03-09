@@ -2,295 +2,328 @@
 
 @section('content')
 
-    <!-- Breadcrumb Start -->
-    <div class="container-fluid">
-        <div class="container">
-            <nav class="breadcrumb bg-transparent m-0 p-0">
-                <a class="breadcrumb-item" href="#">Home</a>
-                <a class="breadcrumb-item" href="#">Category</a>
-                <a class="breadcrumb-item" href="#">Technology</a>
-                <span class="breadcrumb-item active">News Title</span>
-            </nav>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
-
-
-    <!-- News With Sidebar Start -->
-    <div class="container-fluid py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <!-- News Detail Start -->
-                    <div class="position-relative mb-3">
-                        <img class="img-fluid w-100" src="{{asset('public/frontend')}}/img/news-700x435-2.jpg" style="object-fit: cover;">
-                        <div class="overlay position-relative bg-light">
-                            <div class="mb-3">
-                                <a href="">Technology</a>
-                                <span class="px-1">/</span>
-                                <span>January 01, 2045</span>
+<!-- Single News Start-->
+<div class="single-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="sn-container">
+                    <div class="sn-img">
+                        <img src="img/news-825x525.jpg" />
+                    </div>
+                    <div class="sn-content">
+                        <h1 class="sn-title">Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie, lorem eu eleifend bibendum, augue purus mollis sapien, non rhoncus eros leo in nunc. Donec a nulla vel turpis consectetur tempor ac vel justo. In hac habitasse platea dictumst. Cras nec sollicitudin eros. Nunc eu enim non turpis sagittis rhoncus consectetur id augue. Mauris dignissim neque felis. Phasellus mollis mi a pharetra cursus. Maecenas vulputate augue placerat lacus mattis, nec ornare risus sollicitudin.
+                        </p>
+                        <p>
+                            Mauris eu pulvinar tellus, eu luctus nisl. Pellentesque suscipit mi eu varius pulvinar. Aenean vulputate, massa eget elementum finibus, ipsum arcu commodo est, ut mattis eros orci ac risus. Suspendisse ornare, massa in feugiat facilisis, eros nisl auctor lacus, laoreet tempus elit dolor eu lorem. Nunc a arcu suscipit, suscipit quam quis, semper augue.
+                        </p>
+                        <p>
+                            Quisque arcu nulla, convallis nec orci vel, suscipit elementum odio. Curabitur volutpat velit non diam tincidunt sodales. Nullam sapien libero, bibendum nec viverra in, iaculis ut eros.
+                        </p>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>
+                            Vestibulum sit amet ullamcorper sem. Integer hendrerit elit eget purus sodales maximus. Quisque ac nulla arcu. Morbi venenatis arcu ac arcu cursus pharetra. Morbi sit amet viverra augue, ac ultricies libero. Praesent elementum lectus mi, eu elementum urna venenatis sed. Donec auctor purus ut mattis feugiat. Integer mi erat, consectetur sed tincidunt vitae, sagittis elementum libero. Vivamus a mauris consequat, hendrerit lectus in, fermentum libero. Integer mattis bibendum neque et porttitor.
+                        </p>
+                        <p>
+                            Mauris quis arcu finibus, posuere dolor eu, viverra felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In porta, ex vitae accumsan facilisis, nisi tellus dictum metus, quis fringilla dui tellus in tellus. Praesent pharetra orci at vehicula posuere. Sed molestie fringilla lorem, vel imperdiet tortor blandit at. Quisque non ultrices lorem, eget rhoncus orci. Fusce porttitor placerat diam et mattis. Nam laoreet, ex eu posuere sollicitudin, sem tortor pellentesque ipsum, quis mattis purus lectus ut lacus. Integer eu risus ac est interdum scelerisque.
+                        </p>
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>
+                            Praesent ultricies, mauris eget vestibulum viverra, neque lorem malesuada mauris, eget rhoncus lectus enim a lorem. Vivamus at vehicula risus, eget facilisis massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et posuere sapien. Fusce bibendum lorem sem, quis tincidunt felis mattis nec.
+                        </p>
+                        <p>
+                            Proin vel nulla purus. Nunc nec eros in nisi efficitur rutrum quis sed eros. Mauris felis dolor, rhoncus eget gravida vitae, pretium vel arcu. Cras blandit tellus eget tellus dictum venenatis. Sed ultricies bibendum dictum. Etiam facilisis erat id turpis tincidunt malesuada. Duis bibendum sapien eu condimentum sagittis. Proin nunc lorem, ullamcorper vel tortor sodales, imperdiet lacinia dui. Sed congue, felis id rhoncus varius, urna lacus imperdiet nunc, ut porttitor mauris mi quis mi. Integer rutrum est finibus metus eleifend scelerisque. Morbi auctor dignissim purus in interdum. Vestibulum eu dictum enim. Suspendisse et sem vitae velit feugiat facilisis.
+                        </p>
+                        <p>
+                            Nam sodales scelerisque nunc sed convallis. Vestibulum facilisis porta erat, sit amet pharetra tortor blandit id. Nunc velit tellus, consectetur sed convallis in, tincidunt finibus nulla. Integer vel ex in mauris tincidunt tincidunt nec sed elit. Etiam pretium lectus lectus, sed aliquet erat tristique euismod. Praesent faucibus nisl augue, ac tempus libero pellentesque malesuada. Vivamus iaculis imperdiet laoreet. Aliquam vel felis felis. Proin sed sapien erat. Etiam a quam et metus tempor rutrum. Curabitur in faucibus justo. Etiam imperdiet iaculis urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="sn-related">
+                    <h2>Related News</h2>
+                    <div class="row sn-slider">
+                        <div class="col-md-4">
+                            <div class="sn-img">
+                                <img src="img/news-350x223-1.jpg" />
+                                <div class="sn-title">
+                                    <a href="">Interdum et fames ac ante</a>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="mb-3">Est stet amet ipsum stet clita rebum duo</h3>
-                                <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
-                                    magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
-                                    amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
-                                    sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
-                                    aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
-                                    sit stet no diam kasd vero.</p>
-                                <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
-                                    vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
-                                    nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
-                                    ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
-                                    clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
-                                    justo dolore sit invidunt.</p>
-                                <h4 class="mb-3">Est dolor lorem et ea</h4>
-                                <img class="img-fluid w-50 float-left mr-4 mb-2" src="{{asset('public/frontend')}}/img/news-500x280-1.jpg">
-                                <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
-                                    invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
-                                    lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
-                                    rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
-                                    sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
-                                    lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                                    sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
-                                    dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
-                                    sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
-                                    duo tempor sea kasd clita ipsum et.</p>
-                                <h5 class="mb-3">Est dolor lorem et ea</h5>
-                                <img class="img-fluid w-50 float-right ml-4 mb-2" src="{{asset('public/frontend')}}/img/news-500x280-2.jpg">
-                                <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
-                                    invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
-                                    lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
-                                    rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
-                                    sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
-                                    lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                                    sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
-                                    dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
-                                    sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
-                                    duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat
-                                    aliquyam et ut.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sn-img">
+                                <img src="img/news-350x223-2.jpg" />
+                                <div class="sn-title">
+                                    <a href="">Interdum et fames ac ante</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sn-img">
+                                <img src="img/news-350x223-3.jpg" />
+                                <div class="sn-title">
+                                    <a href="">Interdum et fames ac ante</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sn-img">
+                                <img src="img/news-350x223-4.jpg" />
+                                <div class="sn-title">
+                                    <a href="">Interdum et fames ac ante</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- News Detail End -->
+                </div>
+            </div>
 
-                    <!-- Comment List Start -->
-                    <div class="bg-light mb-3" style="padding: 30px;">
-                        <h3 class="mb-4">3 Comments</h3>
-                        <div class="media mb-4">
-                            <img src="{{asset('public/frontend')}}/img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                            <div class="media-body">
-                                <h6><a href="">John Doe</a> <small><i>01 Jan 2045</i></small></h6>
-                                <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
-                                    accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
-                                    Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
-                                    consetetur at sit.</p>
-                                <button class="btn btn-sm btn-outline-secondary">Reply</button>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h2 class="sw-title">In This Category</h2>
+                        <div class="news-list">
+                            <div class="nl-item">
+                                <div class="nl-img">
+                                    <img src="img/news-350x223-1.jpg" />
+                                </div>
+                                <div class="nl-title">
+                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="nl-item">
+                                <div class="nl-img">
+                                    <img src="img/news-350x223-2.jpg" />
+                                </div>
+                                <div class="nl-title">
+                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="nl-item">
+                                <div class="nl-img">
+                                    <img src="img/news-350x223-3.jpg" />
+                                </div>
+                                <div class="nl-title">
+                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="nl-item">
+                                <div class="nl-img">
+                                    <img src="img/news-350x223-4.jpg" />
+                                </div>
+                                <div class="nl-title">
+                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
+                            </div>
+                            <div class="nl-item">
+                                <div class="nl-img">
+                                    <img src="img/news-350x223-5.jpg" />
+                                </div>
+                                <div class="nl-title">
+                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="media">
-                            <img src="{{asset('public/frontend')}}/img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                            <div class="media-body">
-                                <h6><a href="">John Doe</a> <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
-                                    accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
-                                    Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
-                                    consetetur at sit.</p>
-                                <button class="btn btn-sm btn-outline-secondary">Reply</button>
-                                <div class="media mt-4">
-                                    <img src="{{asset('public/frontend')}}/img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1"
-                                        style="width: 45px;">
-                                    <div class="media-body">
-                                        <h6><a href="">John Doe</a> <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                        <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor
-                                            labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed
-                                            eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet
-                                            ipsum diam tempor consetetur at sit.</p>
-                                        <button class="btn btn-sm btn-outline-secondary">Reply</button>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <div class="image">
+                            <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <div class="tab-news">
+                            <ul class="nav nav-pills nav-justified">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#featured">Featured</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#popular">Popular</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#latest">Latest</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="featured" class="container tab-pane active">
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-1.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-2.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-3.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-4.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-5.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="popular" class="container tab-pane fade">
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-4.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-3.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-2.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-1.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-2.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="latest" class="container tab-pane fade">
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-3.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-4.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-5.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-4.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
+                                    </div>
+                                    <div class="tn-news">
+                                        <div class="tn-img">
+                                            <img src="img/news-350x223-3.jpg" />
+                                        </div>
+                                        <div class="tn-title">
+                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Comment List End -->
 
-                    <!-- Comment Form Start -->
-                    <div class="bg-light mb-3" style="padding: 30px;">
-                        <h3 class="mb-4">Leave a comment</h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Name *</label>
-                                <input type="text" class="form-control" id="name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="website">Website</label>
-                                <input type="url" class="form-control" id="website">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group mb-0">
-                                <input type="submit" value="Leave a comment"
-                                    class="btn btn-primary font-weight-semi-bold py-2 px-3">
-                            </div>
-                        </form>
-                    </div>
-                    <!-- Comment Form End -->
-                </div>
-
-                <div class="col-lg-4 pt-3 pt-lg-0">
-                    <!-- Social Follow Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Follow Us</h3>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #39569E;">
-                                <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #52AAF4;">
-                                <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #0185AE;">
-                                <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #C8359D;">
-                                <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #DC472E;">
-                                <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #1AB7EA;">
-                                <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
-                            </a>
+                    <div class="sidebar-widget">
+                        <div class="image">
+                            <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
                         </div>
                     </div>
-                    <!-- Social Follow End -->
 
-                    <!-- Newsletter Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Newsletter</h3>
-                        </div>
-                        <div class="bg-light text-center p-4 mb-3">
-                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
-                            <div class="input-group" style="width: 100%;">
-                                <input type="text" class="form-control form-control-lg" placeholder="Your Email">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary">Sign Up</button>
-                                </div>
-                            </div>
-                            <small>Sit eirmod nonumy kasd eirmod</small>
+                    <div class="sidebar-widget">
+                        <h2 class="sw-title">News Category</h2>
+                        <div class="category">
+                            <ul>
+                                <li><a href="">National</a><span>(98)</span></li>
+                                <li><a href="">International</a><span>(87)</span></li>
+                                <li><a href="">Economics</a><span>(76)</span></li>
+                                <li><a href="">Politics</a><span>(65)</span></li>
+                                <li><a href="">Lifestyle</a><span>(54)</span></li>
+                                <li><a href="">Technology</a><span>(43)</span></li>
+                                <li><a href="">Trades</a><span>(32)</span></li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- Newsletter End -->
 
-                    <!-- Ads Start -->
-                    <div class="mb-3 pb-3">
-                        <a href=""><img class="img-fluid" src="{{asset('public/frontend')}}/img/news-500x280-4.jpg" alt=""></a>
-                    </div>
-                    <!-- Ads End -->
-
-                    <!-- Popular News Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Tranding</h3>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <img src="{{asset('public/frontend')}}/img/news-100x100-1.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                <div class="mb-1" style="font-size: 13px;">
-                                    <a href="">Technology</a>
-                                    <span class="px-1">/</span>
-                                    <span>January 01, 2045</span>
-                                </div>
-                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <img src="{{asset('public/frontend')}}/img/news-100x100-2.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                <div class="mb-1" style="font-size: 13px;">
-                                    <a href="">Technology</a>
-                                    <span class="px-1">/</span>
-                                    <span>January 01, 2045</span>
-                                </div>
-                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <img src="{{asset('public/frontend')}}/img/news-100x100-3.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                <div class="mb-1" style="font-size: 13px;">
-                                    <a href="">Technology</a>
-                                    <span class="px-1">/</span>
-                                    <span>January 01, 2045</span>
-                                </div>
-                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <img src="{{asset('public/frontend')}}/img/news-100x100-4.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                <div class="mb-1" style="font-size: 13px;">
-                                    <a href="">Technology</a>
-                                    <span class="px-1">/</span>
-                                    <span>January 01, 2045</span>
-                                </div>
-                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <img src="{{asset('public/frontend')}}/img/news-100x100-5.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                <div class="mb-1" style="font-size: 13px;">
-                                    <a href="">Technology</a>
-                                    <span class="px-1">/</span>
-                                    <span>January 01, 2045</span>
-                                </div>
-                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            </div>
+                    <div class="sidebar-widget">
+                        <div class="image">
+                            <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
                         </div>
                     </div>
-                    <!-- Popular News End -->
 
-                    <!-- Tags Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Tags</h3>
-                        </div>
-                        <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    <div class="sidebar-widget">
+                        <h2 class="sw-title">Tags Cloud</h2>
+                        <div class="tags">
+                            <a href="">National</a>
+                            <a href="">International</a>
+                            <a href="">Economics</a>
+                            <a href="">Politics</a>
+                            <a href="">Lifestyle</a>
+                            <a href="">Technology</a>
+                            <a href="">Trades</a>
                         </div>
                     </div>
-                    <!-- Tags End -->
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <!-- News With Sidebar End -->
+</div>
+<!-- Single News End-->    
 
 
   @endsection

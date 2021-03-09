@@ -1,4 +1,4 @@
-Post@extends('backend.layouts.master')
+@extends('backend.layouts.master')
 
 @section('content')
 <!-- Content Wrapper. Contains page content -->
@@ -42,7 +42,7 @@ Post@extends('backend.layouts.master')
             </div><!-- /.card-header -->
             <div class="card-body">
               <form action="{{(@$editData)?route('posts.update',$editData->id):route('posts.store')}}"
-                 id="myform" method="post" enctype="multipart/form-data">
+                 id="mydata" method="post" enctype="multipart/form-data">
                 @csrf
                   <input type="hidden" name="id" value="{{@$editData->id}}">
                           <div class="form-row">
@@ -105,7 +105,7 @@ Post@extends('backend.layouts.master')
 
 <script type="text/javascript">
 $(function () {
-  $('#myform').validate({
+  $('#mydata').validate({
     rules: {
       category_id: {
         required: true,

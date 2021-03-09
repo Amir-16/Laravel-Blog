@@ -47,6 +47,7 @@
   <!--ajax toaster css-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
   <!--jquery validation -->
+  <script src="{{asset('public/backend/js/jquery.min.js')}}"></script>
 
     <!--sweetLalert-->
     <link rel="stylesheet" href="sweetalert2.min.css">
