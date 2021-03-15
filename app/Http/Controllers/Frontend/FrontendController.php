@@ -12,16 +12,17 @@ class FrontendController extends Controller
 
     public function index(){
       $data['categories']=Category::all();
-      $data['trends']=Trend::all();
-      $data['allposts']=Post::with(['posts'])->get();
+      $data['allposts']=Post::latest()->take(9)->get();
       return view('frontend.single-page.index',$data);
     }
 
     public function contact(){
       return view('frontend.single-page.contact');
     }
-    public function Details(){
-      return view('frontend.single-page.details');
+    public function Details($id){
+      $data['details']=Post::where('id',$id)->first();
+      $data['randomPosts']=Post::all()->random(number:3);
+      return view('frontend.single-page.details',$data);
     }
 
     public function Categories(){

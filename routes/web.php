@@ -25,9 +25,9 @@ Route::get('/','FrontEnd\FrontendController@index')->name('index');
 
 Route::get('/contact','FrontEnd\FrontendController@contact')->name('contacts');
 
-Route::get('/details','FrontEnd\FrontendController@Details')->name('news.details');
+Route::get('/details/{id}','FrontEnd\FrontendController@Details')->name('post.details');
 
-Route::get('/categories','FrontEnd\FrontendController@Categories')->name('news.categories');
+Route::get('/categories','FrontEnd\FrontendController@Categories')->name('post.categories');
 
 Auth::routes();
 
@@ -76,7 +76,7 @@ Route::group(['middleware'=>'auth'],function(){
 
 //Category Route
 Route::prefix('trend')->group(function(){
-  
+
   Route::get('/view','Backend\TrendingController@index')->name('trends.view');
   Route::get('/add','Backend\TrendingController@add')->name('trends.add');
   Route::post('/store','Backend\TrendingController@store')->name('trends.store');

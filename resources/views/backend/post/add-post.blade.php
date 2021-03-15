@@ -67,7 +67,7 @@
                   </div>
 
                   <div class="form-group col-md-4">
-                    <label for="date">Image <font style="color:red">*</font> </label>
+                    <label for="date">Date <font style="color:red">*</font> </label>
                     <input type="date" name="date" value="{{@$editData->date}}" class="form-control form-group-sm" id="date">
                   </div>
 

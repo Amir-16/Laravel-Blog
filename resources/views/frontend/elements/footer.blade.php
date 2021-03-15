@@ -56,14 +56,16 @@
 
 
 <!-- SCIPTS -->
-<script src="{{asset('public/frontend')}}/common-js/swiper.js"></script>
-<script src="{{asset('public/frontend')}}/common-js/jquery-3.1.1.min.js"></script>
+<script src="{{asset('public/frontend/common-js/swiper.js')}}"></script>
+<script src="{{asset('public/frontend/common-js/jquery-3.1.1.min.js')}}"></script>
 
-<script src="{{asset('public/frontend')}}/common-js/tether.min.js"></script>
+<script src="{{asset('public/frontend/common-js/tether.min.js')}}"></script>
 
-<script src="{{asset('public/frontend')}}/common-js/bootstrap.js"></script>
+<script src="{{asset('public/frontend/common-js/bootstrap.js')}}"></script>
 
-<script src="{{asset('public/frontend')}}/common-js/scripts.js"></script>
+<script src="{{asset('public/frontend/common-js/scripts.js')}}"></script>
+
+
 
 
 </body>
