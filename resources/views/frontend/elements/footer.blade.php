@@ -7,8 +7,8 @@
         <div class="footer-section">
 
           <a class="logo" href="#"><img src="{{asset('public/frontend')}}/images/logo.png" alt="Logo Image"></a>
-          <p class="copyright">Bona @ 2017. All rights reserved.</p>
-          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+          <p class="copyright"> @ 2021. All rights reserved.</p>
+          <p class="copyright">Developed by <a href="" target="_blank">Amirul Islam</a></p>
           <ul class="icons">
             <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
             <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
@@ -56,7 +56,7 @@
 
 
 <!-- SCIPTS -->
-
+<script src="{{asset('public/frontend')}}/common-js/swiper.js"></script>
 <script src="{{asset('public/frontend')}}/common-js/jquery-3.1.1.min.js"></script>
 
 <script src="{{asset('public/frontend')}}/common-js/tether.min.js"></script>
@@ -64,6 +64,7 @@
 <script src="{{asset('public/frontend')}}/common-js/bootstrap.js"></script>
 
 <script src="{{asset('public/frontend')}}/common-js/scripts.js"></script>
+
 
 </body>
 </html>
