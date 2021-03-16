@@ -25,7 +25,7 @@ Route::get('/','FrontEnd\FrontendController@index')->name('index');
 
 Route::get('/contact','FrontEnd\FrontendController@contact')->name('contacts');
 
-Route::get('/details/{id}','FrontEnd\FrontendController@Details')->name('post.details');
+Route::get('/details/{id}','FrontEnd\FrontendController@details')->name('post.details');
 
 Route::get('/categories','FrontEnd\FrontendController@Categories')->name('post.categories');
 

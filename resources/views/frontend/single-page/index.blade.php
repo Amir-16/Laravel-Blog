@@ -40,7 +40,7 @@
 
             <div class="blog-image"><img src="{{asset('public/upload/posts_image/'.$post->image)}}" alt="Blog Image"></div>
 
-            <a class="avatar" href="#"><img src="{{asset('public/frontend')}}/images/icons8-team-355979.jpg" alt="Profile Image"></a>
+             <a class="avatar" href="#"><img src="{{asset('public/upload/user_images/'.$post['user']['image'])}}" alt="Profile Image"></a>
 
             <div class="blog-info">
 

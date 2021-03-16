@@ -22,12 +22,12 @@
 							<div class="post-info">
 
 								<div class="left-area">
-									<a class="avatar" href="#"><img src="{{asset('public/frontend')}}/images/avatar-1-120x120.jpg" alt="Profile Image"></a>
+									<a class="avatar" href="#"><img src="{{asset('public/upload/user_images/'.$details['user']['image'])}}" alt="Profile Image"></a>
 								</div>
 
 								<div class="middle-area">
-									<a class="name" href="#"><b>Katy Liu</b></a>
-									<h6 class="date">on Sep 29, 2017 at 9:48 am</h6>
+									<a class="name" href="#"><b>{{$details['user']['name']}}</b></a>
+									<h6 class="date">{{$details->date}}</h6>
 								</div>
 
 							</div><!-- post-info -->
@@ -66,7 +66,7 @@
 						<div class="post-footer post-info">
 
 							<div class="left-area">
-								<a class="avatar" href="#"><img src="{{asset('public/frontend')}}/images/avatar-1-120x120.jpg" alt="Profile Image"></a>
+								<a class="avatar" href="#"><img src="" alt="Profile Image"></a>
 							</div>
 
 							<div class="middle-area">
@@ -85,10 +85,8 @@
 					<div class="single-post info-area">
 
 						<div class="sidebar-area about-area">
-							<h4 class="title"><b>ABOUT BONA</b></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-								Ut enim ad minim veniam</p>
+							<h4 class="title"><b>ABOUT Author</b></h4>
+							<p>{{$details['user']['name']}}</p>
 						</div>
 
 						<div class="sidebar-area subscribe-area">
@@ -140,7 +138,7 @@
 
 							<div class="blog-image"><img src="{{asset('public/upload/posts_image/'.$random->image)}}" alt="Blog Image"></div>
 
-							<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+							<!-- <a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a> -->
 
 							<div class="blog-info">
 
