@@ -204,6 +204,11 @@ $.widget.bridge('uibutton', $.ui.button)
 <script src="{{asset('public/backend')}}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="{{asset('public/backend')}}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="{{asset('public/backend')}}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- image Crop js -->
+<script src="{{asset('public/backend')}}/js/jquery.resizeImage.js"></script>
+<script src="{{asset('public/backend')}}/js/jquery.resizeImage.min.js"></script>
+<script src="{{asset('public/backend')}}/js/jquery.resizeImage.tezt.js"></script>
+<script src="{{asset('public/backend')}}/js/.pilote.js"></script>
 
 <!-- jquery-validation -->
 <script src="{{asset('public/backend/plugins/jquery-validation/additional-methods.min.js')}}"></script>

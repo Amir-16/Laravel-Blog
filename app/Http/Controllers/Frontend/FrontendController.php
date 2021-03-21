@@ -20,6 +20,7 @@ class FrontendController extends Controller
     public function contact(){
       return view('frontend.single-page.contact');
     }
+    
     public function details($id){
       $data['details']=Post::with(['user'])->where('id',$id)->first();
       $data['randomPosts']=Post::all()->random(number:3);
