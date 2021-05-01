@@ -32,13 +32,13 @@
           <!-- Custom tabs (Charts with tabs)-->
           <div class="card-header">
             <h3 class="float-right">Category list </h3>
-              <!-- modal -->
+              <!-- Add modal -->
                   <div class="container">
                     <!-- Trigger the modal with a button -->
                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Category</button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal fade"  id="myModal" role="dialog">
                       <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
@@ -77,6 +77,50 @@
                     </div>
 
                   </div>
+                  <div class="container">
+                    <!-- Trigger the modal with a button -->
+                    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Category</button> -->
+
+                    <!--Edit Modal -->
+                    <div class="modal fade"  id="editModal" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Edit Category</h4>
+                          </div>
+                          <div class="modal-body">
+                            <form class="" action="{{route('categories.update',$editData->id)}}" method="post" id="myform" enctype="multipart/form-data">
+                              @csrf
+                              <div class="form-group ">
+                                <label for="">Category Name</label>
+                                <input type="text" name="name" name="{{$editData->name}}" class="form-control form-control-sm">
+                                <font style="color:red">{{($errors->has('name'))?($errors->first('name')):''}}
+                                </font>
+                              </div>
+                              <div class="form-group ">
+                                <label for="">Image</label>
+                                <input type="file" name="image" id="image" class="form-control form-control-sm">
+                              </div>
+                              <div class="form-group" >s
+                                  <img id="showImage" src="{{url('public/upload/no-image.jpg')}}"
+                                  style="width: 70px;height: 80px; border:1px solid #000000">
+                                </div>
+                              <div class="form-group col-md-4">
+                                <button type="submit" name="button" class="btn btn-primary">Update</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
 
           </div><!-- /.card-header -->
             <div class="card-body">
@@ -98,7 +142,7 @@
                          style="width: 70px;height: 80px;border: 1px solid #000" alt="">
                        </td>
 
-                    <td> <a title="edit" class="btn btn-sm btn-primary" href="{{route('categories.edit',$category->id)}}"> <i class="fa fa-edit"> </i> </a>
+                    <td> <a title="edit" id="editModal" class="btn btn-sm btn-primary" href="{{route('categories.edit',$category->id)}}"> <i class="fa fa-edit"> </i> </a>
                       <a title="delete" id="delete" class="btn btn-sm btn-danger" href="{{route('categories.delete',$category->id)}}"> <i class="fa fa-trash"> </i></a>
                     </td>
                   </tr>

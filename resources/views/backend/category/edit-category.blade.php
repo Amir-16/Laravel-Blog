@@ -44,15 +44,15 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Add Category</h4>
+                            <h4 class="modal-title">Edit Category</h4>
                           </div>
                           <div class="modal-body">
-                            <form  action="{{route('categories.store')}}" method="post" id="myform" enctype="multipart/form-data">
+                            <form class="" action="{{route('categories.update',$editData->id)}}" method="post" id="myform" enctype="multipart/form-data">
                               @csrf
                               <div class="form-group ">
                                 <label for="">Category Name</label>
-                                <input type="text" name="name" class="form-control form-control-sm">
-                                <font style="color:red">{{($errors->has('name'))?($errors->first('name')):''}}
+                                <input type="text" name="name" name={{$editData->name}} class="form-control form-control-sm">
+
                                 </font>
                               </div>
                               <div class="form-group ">
@@ -64,7 +64,7 @@
                                   style="width: 70px;height: 80px; border:1px solid #000000">
                                 </div>
                               <div class="form-group col-md-4">
-                                <button type="submit" name="button" class="btn btn-primary">Submit</button>
+                                <button type="submit" name="button" class="btn btn-primary">Update</button>
                               </div>
                             </form>
                           </div>
@@ -77,34 +77,37 @@
                     </div>
 
                   </div>
+
           </div><!-- /.card-header -->
-          <div class="card-body">
-            <form action="{{route('categories.update',$editData->id)}}" id="myform" method="post" enctype="multipart/form-data">
-              @csrf
-              <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="name"> Category Name</label>
-                <input type="text" name="name" value="{{$editData->name}}"  class="form-control">
-                  <font style="color:red"> {{($errors->has('name'))?($errors->first('name')):''}}</font>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="">Image</label>
-                <input type="file" name="image" id="image" class="form-control form-control-sm">
-              </div>
+            <div class="card-body">
+              <table id="example" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Category Name</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @foreach($allData as $key=> $category)
+                  <tr>
+                    <td>{{$key+1}}</td>
+                    <td>{{$category->name}}</td>
+                    <td><img src="{{(!empty($category->image))?url('public/upload/category_images/'.$category->image):url('public/upload/no-image.jpg')}}"
+                         style="width: 70px;height: 80px;border: 1px solid #000" alt="">
+                       </td>
 
-                <div class="form-group col-md-2" >
-                <img id="showImage" src="{{(!empty($editData->image))?url('public/upload/category_images/'.$editData->image):url('public/upload/no-image.jpg')}}"
-                style="width: 150px;height: 160px; border:1px solid #000000">
-                </div>
+                    <td> <a title="edit" class="btn btn-sm btn-primary" href="{{route('categories.edit',$category->id)}}"> <i class="fa fa-edit"> </i> </a>
+                      <a title="delete" id="delete" class="btn btn-sm btn-danger" href="{{route('categories.delete',$category->id)}}"> <i class="fa fa-trash"> </i></a>
+                    </td>
+                  </tr>
+                  @endforeach
 
-                <div class="form-group col-md-2" style="padding-top: 30px">
-                  <input type="submit" value="Update" class="btn btn-primary">
-                </div>
+                </tbody>
+              </table>
 
-              </div>
-            </form>
-
-        </div>
+          </div>
           <!-- /.card -->
 
           <!-- /.card -->

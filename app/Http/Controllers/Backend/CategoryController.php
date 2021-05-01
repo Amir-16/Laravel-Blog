@@ -43,8 +43,9 @@ class CategoryController extends Controller
 
 
       public function edit($id){
-        $editData=Category::find($id);
-        return view('backend.category.edit-category' ,compact('editData'));
+        $data['allData']=Category::all();
+        $data['editData']=Category::find($id);
+        return view('backend.category.view-category' ,$data);
       }
 
       public function update(Request $request,$id){
